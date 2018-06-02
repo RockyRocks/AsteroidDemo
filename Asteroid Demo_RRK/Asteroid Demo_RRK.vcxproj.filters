@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{9efb55b9-16c6-4687-891f-e650cee87642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{77ba56df-3764-4e42-99b8-298f54b4eee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{d85463d9-eb5b-4e64-8989-8c13ea8ac8b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Logger">
+      <UniqueIdentifier>{cb63212b-75f2-4bcb-a366-124c9721e9a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\StateManager">
+      <UniqueIdentifier>{710c2050-1653-45b1-a7da-6c75b3af2d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Timer">
+      <UniqueIdentifier>{78313e76-8217-4d69-8ad0-60fdaceb4535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utils">
+      <UniqueIdentifier>{378e2379-5026-4c50-8b69-1a0ef7842bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Ai">
+      <UniqueIdentifier>{0f7c6c93-325e-4a08-adc7-682583c99f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\gfx">
+      <UniqueIdentifier>{d3127fbe-4453-45e2-b3c6-3a341555ed54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Input">
+      <UniqueIdentifier>{f4cf2206-bac5-422f-b7aa-3599b4f66164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Sound">
+      <UniqueIdentifier>{8114dccd-013e-4cf0-8d99-27d6612d1d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Ui">
+      <UniqueIdentifier>{a1257826-9e62-4587-a1ed-9c462b59b689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects">
+      <UniqueIdentifier>{c81d980d-8d20-4882-bd3d-e132c5a57f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Physics">
+      <UniqueIdentifier>{3fd9b650-6de0-4fa6-b96e-ce9f34a859da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\States">
+      <UniqueIdentifier>{f9e3a718-7c7b-468d-8110-46ee50b0651a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\logger\Logger.cpp">
+      <Filter>Common\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="common\StateManager\IState.cpp">
+      <Filter>Common\StateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="common\StateManager\StateManager.cpp">
+      <Filter>Common\StateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="common\timer\WinTimer.cpp">
+      <Filter>Common\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="common\utils\Bitmap.cpp">
+      <Filter>Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="common\utils\HashedString.cpp">
+      <Filter>Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="common\utils\Matrix44f.cpp">
+      <Filter>Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="common\utils\Random.cpp">
+      <Filter>Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ai\ai_EnemyStates.cpp">
+      <Filter>Engine\Ai</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ai\AIEngine.cpp">
+      <Filter>Engine\Ai</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\gfx\GraphicsManager.cpp">
+      <Filter>Engine\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\gfx\RenderWindow.cpp">
+      <Filter>Engine\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\gfx\TextureManager.cpp">
+      <Filter>Engine\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\input\InputManager.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\input\PCInputcontroller.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\sound\PCSound.cpp">
+      <Filter>Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\sound\SoundManager.cpp">
+      <Filter>Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\sound\SoundUtil.cpp">
+      <Filter>Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\BaseScene.cpp">
+      <Filter>Engine\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\Character.cpp">
+      <Filter>Engine\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\CharcterManager.cpp">
+      <Filter>Engine\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\Color.cpp">
+      <Filter>Engine\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\GUI_Component.cpp">
+      <Filter>Engine\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\GUI_Page.cpp">
+      <Filter>Engine\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\ui\GUISystem.cpp">
+      <Filter>Engine\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\BaseEntity.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\Bullet.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\Enemy.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\EntityManager.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\Laser.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\objects\Player.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="game\physics\CollisionDetector.cpp">
+      <Filter>Game\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="game\states\ExitTitleScreenState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="game\states\ExitWindowsScreenState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="game\states\MainGameState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="game\states\OptionState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="game\states\PlayerScore.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="game\states\ScoreState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="game\states\SetupState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="game\states\TitleScreenState.cpp">
+      <Filter>Game\States</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="game\objects\Asteroid.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\logger\Logger.h">
+      <Filter>Common\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="common\StateManager\BaseState.h">
+      <Filter>Common\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="common\StateManager\IState.h">
+      <Filter>Common\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="common\StateManager\StateManager.h">
+      <Filter>Common\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="common\timer\WinTimer.h">
+      <Filter>Common\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\Bitmap.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\ColourRGBA.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\HashedString.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\MathLib.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\Random.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\Singleton.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\SmartPtr.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\Utils.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ai\ai_EnemyStates.h">
+      <Filter>Engine\Ai</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ai\ai_State.h">
+      <Filter>Engine\Ai</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ai\ai_StateMachine.h">
+      <Filter>Engine\Ai</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ai\aiengine.h">
+      <Filter>Engine\Ai</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gfx\GraphicsManager.h">
+      <Filter>Engine\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gfx\IRenderer.h">
+      <Filter>Engine\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gfx\RenderWindow.h">
+      <Filter>Engine\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gfx\TextureManager.h">
+      <Filter>Engine\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input\IController.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input\InputManager.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input\PCInputcontroller.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\sound\ISoundSystem.h">
+      <Filter>Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\sound\PCSound.h">
+      <Filter>Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\sound\SoundManager.h">
+      <Filter>Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\sound\SoundUtil.h">
+      <Filter>Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\BaseScene.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\Character.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\CharcterManager.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\Color.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\GUI_Component.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\GUI_Page.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\GUISystem.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\PreRequisite.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\Bullet.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\Enemy.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\EntityManager.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\Laser.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\Player.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\physics\CollisionDetector.h">
+      <Filter>Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="game\physics\CollisionPrimitives.h">
+      <Filter>Game\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="game\states\ExitTitleScreenState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game\states\ExitWindowsScreenState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game\states\MainGameState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game\states\OptionState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game\states\PlayerScore.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game\states\ScoreState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game\states\SetupState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game\states\TitleScreenState.h">
+      <Filter>Game\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game\GameConstants.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\ui\IScene.h">
+      <Filter>Engine\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\IEntity.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\AsteroidSettings.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\BaseEntity.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game\objects\Asteroid.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Bin\Config.cfg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\Input.cfg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\ScoreBoard.Rocky">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\enemy1.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\enemy2.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\enemy3.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\enemy4.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\enemy5.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\enemy6.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\player1.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\player2.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Bin\data\Asteroid.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

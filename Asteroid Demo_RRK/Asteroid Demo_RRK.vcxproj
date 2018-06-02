@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\logger\Logger.cpp" />
+    <ClCompile Include="common\StateManager\IState.cpp" />
+    <ClCompile Include="common\StateManager\StateManager.cpp" />
+    <ClCompile Include="common\timer\WinTimer.cpp" />
+    <ClCompile Include="common\utils\Bitmap.cpp" />
+    <ClCompile Include="common\utils\HashedString.cpp" />
+    <ClCompile Include="common\utils\Matrix44f.cpp" />
+    <ClCompile Include="common\utils\Random.cpp" />
+    <ClCompile Include="engine\ai\AIEngine.cpp" />
+    <ClCompile Include="engine\ai\ai_EnemyStates.cpp" />
+    <ClCompile Include="engine\Engine.cpp" />
+    <ClCompile Include="engine\gfx\GraphicsManager.cpp" />
+    <ClCompile Include="engine\gfx\RenderWindow.cpp" />
+    <ClCompile Include="engine\gfx\TextureManager.cpp" />
+    <ClCompile Include="engine\input\InputManager.cpp" />
+    <ClCompile Include="engine\input\PCInputcontroller.cpp" />
+    <ClCompile Include="engine\sound\PCSound.cpp" />
+    <ClCompile Include="engine\sound\SoundManager.cpp" />
+    <ClCompile Include="engine\sound\SoundUtil.cpp" />
+    <ClCompile Include="engine\ui\BaseScene.cpp" />
+    <ClCompile Include="engine\ui\Character.cpp" />
+    <ClCompile Include="engine\ui\CharcterManager.cpp" />
+    <ClCompile Include="engine\ui\Color.cpp" />
+    <ClCompile Include="engine\ui\GUISystem.cpp" />
+    <ClCompile Include="engine\ui\GUI_Component.cpp" />
+    <ClCompile Include="engine\ui\GUI_Page.cpp" />
+    <ClCompile Include="game\objects\Asteroid.cpp" />
+    <ClCompile Include="game\objects\BaseEntity.cpp" />
+    <ClCompile Include="game\objects\Bullet.cpp" />
+    <ClCompile Include="game\objects\Enemy.cpp" />
+    <ClCompile Include="game\objects\EntityManager.cpp" />
+    <ClCompile Include="game\objects\Laser.cpp" />
+    <ClCompile Include="game\objects\Player.cpp" />
+    <ClCompile Include="game\physics\CollisionDetector.cpp" />
+    <ClCompile Include="game\states\ExitTitleScreenState.cpp" />
+    <ClCompile Include="game\states\ExitWindowsScreenState.cpp" />
+    <ClCompile Include="game\states\MainGameState.cpp" />
+    <ClCompile Include="game\states\OptionState.cpp" />
+    <ClCompile Include="game\states\PlayerScore.cpp" />
+    <ClCompile Include="game\states\ScoreState.cpp" />
+    <ClCompile Include="game\states\SetupState.cpp" />
+    <ClCompile Include="game\states\TitleScreenState.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\logger\Logger.h" />
+    <ClInclude Include="common\StateManager\BaseState.h" />
+    <ClInclude Include="common\StateManager\IState.h" />
+    <ClInclude Include="common\StateManager\StateManager.h" />
+    <ClInclude Include="common\timer\WinTimer.h" />
+    <ClInclude Include="common\utils\Bitmap.h" />
+    <ClInclude Include="common\utils\ColourRGBA.h" />
+    <ClInclude Include="common\utils\HashedString.h" />
+    <ClInclude Include="common\utils\MathLib.h" />
+    <ClInclude Include="common\utils\Random.h" />
+    <ClInclude Include="common\utils\Singleton.h" />
+    <ClInclude Include="common\utils\SmartPtr.h" />
+    <ClInclude Include="common\utils\Utils.h" />
+    <ClInclude Include="engine\ai\aiengine.h" />
+    <ClInclude Include="engine\ai\ai_EnemyStates.h" />
+    <ClInclude Include="engine\ai\ai_State.h" />
+    <ClInclude Include="engine\ai\ai_StateMachine.h" />
+    <ClInclude Include="engine\Engine.h" />
+    <ClInclude Include="engine\gfx\GraphicsManager.h" />
+    <ClInclude Include="engine\gfx\IRenderer.h" />
+    <ClInclude Include="engine\gfx\RenderWindow.h" />
+    <ClInclude Include="engine\gfx\TextureManager.h" />
+    <ClInclude Include="engine\input\IController.h" />
+    <ClInclude Include="engine\input\InputManager.h" />
+    <ClInclude Include="engine\input\PCInputcontroller.h" />
+    <ClInclude Include="engine\sound\ISoundSystem.h" />
+    <ClInclude Include="engine\sound\PCSound.h" />
+    <ClInclude Include="engine\sound\SoundManager.h" />
+    <ClInclude Include="engine\sound\SoundUtil.h" />
+    <ClInclude Include="engine\ui\BaseScene.h" />
+    <ClInclude Include="engine\ui\Character.h" />
+    <ClInclude Include="engine\ui\CharcterManager.h" />
+    <ClInclude Include="engine\ui\Color.h" />
+    <ClInclude Include="engine\ui\GUISystem.h" />
+    <ClInclude Include="engine\ui\GUI_Component.h" />
+    <ClInclude Include="engine\ui\GUI_Page.h" />
+    <ClInclude Include="engine\ui\IScene.h" />
+    <ClInclude Include="engine\ui\PreRequisite.h" />
+    <ClInclude Include="game\GameConstants.h" />
+    <ClInclude Include="game\objects\Asteroid.h" />
+    <ClInclude Include="game\objects\BaseEntity.h" />
+    <ClInclude Include="game\objects\Bullet.h" />
+    <ClInclude Include="game\objects\Enemy.h" />
+    <ClInclude Include="game\objects\EntityManager.h" />
+    <ClInclude Include="game\objects\IEntity.h" />
+    <ClInclude Include="game\objects\Laser.h" />
+    <ClInclude Include="game\objects\Player.h" />
+    <ClInclude Include="game\physics\CollisionDetector.h" />
+    <ClInclude Include="game\physics\CollisionPrimitives.h" />
+    <ClInclude Include="game\AsteroidSettings.h" />
+    <ClInclude Include="game\states\ExitTitleScreenState.h" />
+    <ClInclude Include="game\states\ExitWindowsScreenState.h" />
+    <ClInclude Include="game\states\MainGameState.h" />
+    <ClInclude Include="game\states\OptionState.h" />
+    <ClInclude Include="game\states\PlayerScore.h" />
+    <ClInclude Include="game\states\ScoreState.h" />
+    <ClInclude Include="game\states\SetupState.h" />
+    <ClInclude Include="game\states\TitleScreenState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Bin\Config.cfg" />
+    <None Include="..\Bin\data\Asteroid.txt" />
+    <None Include="..\Bin\data\enemy1.txt" />
+    <None Include="..\Bin\data\enemy2.txt" />
+    <None Include="..\Bin\data\enemy3.txt" />
+    <None Include="..\Bin\data\enemy4.txt" />
+    <None Include="..\Bin\data\enemy5.txt" />
+    <None Include="..\Bin\data\enemy6.txt" />
+    <None Include="..\Bin\data\player1.txt" />
+    <None Include="..\Bin\data\player2.txt" />
+    <None Include="..\Bin\Input.cfg" />
+    <None Include="..\Bin\ScoreBoard.Rocky" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7BA1D86-3916-44F6-8D73-13BC35E12CED}</ProjectGuid>
+    <RootNamespace>AsteroidDemo_RRK</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>false</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>..\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>..\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>3rdParty\gxbase;3rdParty\gxbase\inc;3rdParty\OpengLLibrary\include;3rdParty\OpengLLibrary\Sound\include;C:\Program Files\Microsoft SDKs\Windows\v7.1\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;../../Asteroid Demo_RRK\Asteroid Demo_RRK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft Visual Studio 11.0\VC\atlmfc\lib;C:\Program Files (x86)\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK %28June 2010%29\Lib;3rdParty\gxbase\lib;3rdParty\OpengLLibrary\lib;3rdParty\OpengLLibrary\Sound\lib;C:\Program Files\Microsoft SDKs\Windows\v7.1\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <IgnoreSpecificDefaultLibraries>atls.lib;atlsd.lib;</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;dxguid.lib;d3d10.lib;d3dx10.lib;OpenAL32.lib;alut.lib;dinput8.lib; %(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>3rdParty\gxbase;3rdParty\gxbase\inc;3rdParty\OpengLLibrary\include;3rdParty\OpengLLibrary\Sound\include;C:\Program Files\Microsoft SDKs\Windows\v7.1\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;../../Asteroid Demo_RRK\Asteroid Demo_RRK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft Visual Studio 11.0\VC\atlmfc\lib;C:\Program Files (x86)\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Program Files (x86)\Microsoft DirectX SDK %28June 2010%29\Lib;3rdParty\gxbase\lib;3rdParty\OpengLLibrary\lib;3rdParty\OpengLLibrary\Sound\lib;C:\Program Files\Microsoft SDKs\Windows\v7.1\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>atls.lib;atlsd.lib;</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;dxguid.lib;d3d10.lib;d3dx10.lib;OpenAL32.lib;alut.lib;dinput8.lib; %(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
